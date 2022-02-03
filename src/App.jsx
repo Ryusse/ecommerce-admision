@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 
 import './assets/sass/main.scss'
+import './App.scss'
 
 import Home from './views/Home'
 import Drinks from './views/Drinks'
