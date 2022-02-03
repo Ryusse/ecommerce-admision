@@ -1,0 +1,7 @@
+.drink-list {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

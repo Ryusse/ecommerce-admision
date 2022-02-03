@@ -1,3 +1,12 @@
+import Header from '../parts/Header/Header'
+import Sidebar from '../parts/Sidebar/Sidebar'
+
 export default function Drinks() {
-  return <h1>Drinks</h1>
+  return (
+    <>
+      <Header />
+      <Sidebar />
+      <main className='main'>Main</main>
+    </>
+  )
 }

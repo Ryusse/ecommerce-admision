@@ -1,0 +1,28 @@
+@use '../../assets/sass/variables' as *;
+
+.navbar {
+  margin-top: 2.5rem;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &__item {
+    display: grid;
+  }
+
+  &__link {
+    color: $grayish;
+    padding: 0.438rem 0.625rem;
+    border-radius: $border-radius;
+    transition: all 0.25s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $red;
+      background-color: $light-red;
+    }
+  }
+}
