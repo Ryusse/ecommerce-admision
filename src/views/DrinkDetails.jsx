@@ -1,15 +1,12 @@
-import DrinkList from '../components/DrinkList/DrinkList'
 import Header from '../parts/Header/Header'
 import Sidebar from '../parts/Sidebar/Sidebar'
 
-export default function Drinks() {
+export default function DrinkDetails() {
   return (
     <>
       <Header />
       <Sidebar />
-      <main className='main'>
-        <DrinkList />
-      </main>
+      <main className='main'>DrinkDetails</main>
     </>
   )
 }

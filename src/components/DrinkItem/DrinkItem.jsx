@@ -1,7 +1,10 @@
 import Button from '../Button/Button'
+import { useParams } from 'react-router'
+
 import './DrinkItem.scss'
 
 export default function DrinkItem({ drink }) {
+  const params = useParams()
   return (
     <div className='card'>
       <figure className='image-container'>
@@ -10,8 +13,8 @@ export default function DrinkItem({ drink }) {
       <div className='content'>
         <span className='content__category'> {drink.strCategory} </span>
         <h3 className='content__title'> {drink.strDrink} </h3>
-        <span class='content__price'> $42.00 </span>
-        <Button content={'Add to cart'} selector={'button--red'} />
+        <span className='content__price'> $42.00 </span>
+        {/* <Button content={'Add to cart'} selector={'button--red'} /> */}
       </div>
     </div>
   )
