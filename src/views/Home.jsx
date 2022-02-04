@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 
 import Header from '../parts/Header/Header'
 import Sidebar from '../parts/Sidebar/Sidebar'
-import DrinkList from '../components/DrinkListHome/DrinkListHome'
+import DrinkListHome from '../components/DrinkListHome/DrinkListHome'
 import Button from '../components/Button/Button'
 
-export default function Home() {
+export default function Home({ drinks }) {
   return (
     <>
       <Header />
@@ -13,7 +13,7 @@ export default function Home() {
       <main className='main home-main'>
         <div className='featured-products'>
           <h2>Featured Products</h2>
-          <DrinkList />
+          <DrinkListHome drinks={drinks} />
           <Link className='featured-products__button' to='/drinks'>
             <Button content={'See more'} selector={'button--red'} />
           </Link>

@@ -6,24 +6,7 @@ import Spinner from '../Spinner/Spinner'
 
 import './DrinkList.scss'
 
-export default function DrinkList() {
-  const [drinks, setDrinks] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
-  const initialUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a'
-
-  const getDrinks = (url) => {
-    setIsLoading(true)
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setDrinks(data.drinks))
-      .then(() => setIsLoading(false))
-      .catch((error) => console.log(error))
-  }
-
-  useEffect(() => {
-    getDrinks(initialUrl)
-  }, [])
-
+export default function DrinkList({ drinks, isLoading }) {
   if (isLoading) {
     return <Spinner />
   }
