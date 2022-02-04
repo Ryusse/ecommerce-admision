@@ -24,10 +24,12 @@ export default function DrinkListHome() {
   }
 
   return (
-    <ul className='drink-list'>
-      {drinks.slice(0, 4).map((drink) => (
-        <DrinkItem key={drink.idDrink} drink={drink} />
-      ))}
-    </ul>
+    <>
+      <ul className='drink-list-home'>
+        {drinks.slice(0, 3).map((drink) => (
+          <DrinkItem key={drink.idDrink} drink={drink} />
+        ))}
+      </ul>
+    </>
   )
 }

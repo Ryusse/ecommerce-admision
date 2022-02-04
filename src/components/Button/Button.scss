@@ -1,0 +1,16 @@
+@use '../../assets/sass/variables' as *;
+
+.button {
+  padding: 0.87rem 1.5rem;
+  border-radius: $border-radius;
+
+  &--red {
+    background-color: $red;
+    color: $white-1;
+
+    &:hover,
+    &:focus {
+      background-color: $soft-red;
+    }
+  }
+}
