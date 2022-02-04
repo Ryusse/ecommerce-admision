@@ -1,7 +1,18 @@
-.drink-list {
-  max-width: 1200px;
-  margin: auto;
+@use '../../assets/sass/mixins' as *;
+@use '../../assets/sass/variables' as *;
+
+.drink-list-home {
   display: grid;
   place-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1.8rem;
+
+  @include query(ms) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include query(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

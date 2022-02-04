@@ -26,6 +26,8 @@
 
 .main {
   grid-area: main;
-
+  max-width: $max-width-desktop;
+  margin: 0 auto;
   padding: 3.1rem $padding-mobile;
+  background-color: $white-2;
 }

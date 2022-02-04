@@ -2,19 +2,25 @@ $black: #1d2025;
 $grayish: #68707d;
 
 $red: #fb2e86;
+$soft-red: #fd5fa4;
 $light-red: rgba(251, 46, 134, 12%);
 
+$white-1: #fff;
+$white-2: #f9fafe;
+
 $light-blue: #f2f0ff;
+$blue: #2f1ac4;
+$dark-blue: #151875;
 
 $padding-mobile: 5vw;
-$max-width-desktop: 1240px;
-$border-radius: 6px;
+$max-width-desktop: 1200px;
+$border-radius: 7px;
 
 $breakpoints: (
   // // 400px
   // xs: 25em,
-  // // 544px
-  // sm: 34em,
+  // 544px
+  ms: 34em,
   // 768px
   md: 48em,
   // 960px
