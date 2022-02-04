@@ -2,13 +2,27 @@
 @use '../../assets/sass/variables' as *;
 
 .header {
-  background-color: $light-blue;
-  padding: 1.8rem $padding-mobile;
+  padding: 2rem $padding-mobile;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include query(md) {
+  .logo {
+    @include query(md) {
+      display: none;
+    }
+  }
+
+  .cart {
     display: none;
+    @include query(md) {
+      display: block;
+    }
+  }
+
+  .toggle {
+    @include query(md) {
+      display: none;
+    }
   }
 }

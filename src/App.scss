@@ -11,8 +11,10 @@
 
   @include query(md) {
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'sidebar main';
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'sidebar header'
+      'sidebar main';
   }
 }
 
