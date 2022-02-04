@@ -29,3 +29,14 @@
   padding: 3.1rem $padding-mobile;
   background-color: $white-2;
 }
+
+.featured-products {
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+
+  &__button {
+    display: grid;
+    place-content: center;
+  }
+}

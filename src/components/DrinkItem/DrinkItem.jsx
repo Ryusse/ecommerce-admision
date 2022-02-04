@@ -14,7 +14,6 @@ export default function DrinkItem({ drink }) {
         <span className='content__category'> {drink.strCategory} </span>
         <h3 className='content__title'> {drink.strDrink} </h3>
         <span className='content__price'> $42.00 </span>
-        {/* <Button content={'Add to cart'} selector={'button--red'} /> */}
       </div>
     </div>
   )
