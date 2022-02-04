@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 import './assets/sass/main.scss'
 import './App.scss'
@@ -13,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/drinks' element={<Drinks />} />
+        <Route path='*' element={<Navigate replace to='/' />} />
       </Routes>
     </div>
   )

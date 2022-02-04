@@ -7,11 +7,11 @@ export default function Navbar() {
     <nav className='navbar'>
       <ul className='navbar__list'>
         <li className='navbar__item'>
-          <Link className='navbar__link' to={`/`}>
+          <Link className='navbar__link' to='/'>
             Home
           </Link>
         </li>
-        <Link className='navbar__link' to={`drinks`}>
+        <Link className='navbar__link' to='/drinks'>
           Drinks
         </Link>
       </ul>
