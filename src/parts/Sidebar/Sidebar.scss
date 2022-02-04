@@ -3,23 +3,18 @@
 
 .sidebar {
   display: none;
+  position: sticky;
+  top: 0;
   padding: 3.1rem 2.75rem;
   background-color: $light-blue;
   height: 100vh;
-
-  &__container {
-    top: 3.1rem;
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: auto;
-  }
 
   &__title {
     margin-top: 4.3rem;
   }
 
   @include query(md) {
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 }
