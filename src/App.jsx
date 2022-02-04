@@ -32,7 +32,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home drinks={drinks} />} />
         <Route path='/drinks' element={<Drinks drinks={drinks} isLoading={isLoading} />} />
-        <Route path='/drinks/:drinkId' element={<DrinkDetails />} />
+        <Route path='/drinks/:drinkId' element={<DrinkDetails drinks={drinks} />} />
         <Route path='/cart' element={<CartDetails />} />
         <Route path='*' element={<Navigate replace to='/' />} />
       </Routes>

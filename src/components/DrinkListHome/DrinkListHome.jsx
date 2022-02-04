@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import DrinkItem from '../DrinkItem/DrinkItem'
 
@@ -9,7 +9,9 @@ export default function DrinkListHome({ drinks }) {
     <>
       <ul className='drink-list-home'>
         {drinks.slice(0, 3).map((drink) => (
-          <DrinkItem key={drink.idDrink} drink={drink} />
+          <Link key={drink.idDrink} to={drink.idDrink}>
+            <DrinkItem drink={drink} />
+          </Link>
         ))}
       </ul>
     </>
