@@ -3,8 +3,6 @@ import './Navbar.scss'
 import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
-  const setActive = ({ isActive }) => (isActive ? 'navba__link--active' : '')
-
   return (
     <nav className='navbar'>
       <ul className='navbar__list'>
