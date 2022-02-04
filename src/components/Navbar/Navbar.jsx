@@ -1,19 +1,33 @@
 import './Navbar.scss'
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
+  const setActive = ({ isActive }) => (isActive ? 'navba__link--active' : '')
+
   return (
     <nav className='navbar'>
       <ul className='navbar__list'>
         <li className='navbar__item'>
-          <Link className='navbar__link' to='/'>
+          <NavLink
+            to='/'
+            className='navbar__link'
+            style={({ isActive }) =>
+              isActive ? { background: 'rgba(251, 46, 134, 12%)', color: '#fb2e86' } : {}
+            }
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
-        <Link className='navbar__link' to='/drinks'>
+        <NavLink
+          to='/drinks'
+          className='navbar__link'
+          style={({ isActive }) =>
+            isActive ? { background: 'rgba(251, 46, 134, 12%)', color: '#fb2e86' } : {}
+          }
+        >
           Drinks
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   )

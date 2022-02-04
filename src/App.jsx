@@ -6,6 +6,7 @@ import './App.scss'
 
 import Home from './views/Home'
 import Drinks from './views/Drinks'
+import DrinkDetails from './views/DrinkDetails'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/drinks' element={<Drinks />} />
+        <Route path='/drinks/:drinkId' element={<DrinkDetails />} />
         <Route path='*' element={<Navigate replace to='/' />} />
       </Routes>
     </div>
