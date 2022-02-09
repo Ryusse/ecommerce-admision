@@ -4,14 +4,14 @@ import DrinkItem from '../DrinkItem/DrinkItem'
 
 import './DrinkListHome.scss'
 
-export default function DrinkListHome({ drinks }) {
+export default function DrinkListHome() {
   return (
     <>
-      <ul className='drink-list-home'>
+      {/* <ul className='drink-list-home'>
         {drinks.slice(0, 3).map((drink) => (
           <DrinkItem key={drink.idDrink} drink={drink} />
         ))}
-      </ul>
+      </ul> */}
     </>
   )
 }

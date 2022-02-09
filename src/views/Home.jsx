@@ -5,7 +5,7 @@ import Sidebar from '../parts/Sidebar/Sidebar'
 import DrinkListHome from '../components/DrinkListHome/DrinkListHome'
 import Button from '../components/Button/Button'
 
-export default function Home({ drinks }) {
+export default function Home() {
   return (
     <>
       <Header />
@@ -13,7 +13,7 @@ export default function Home({ drinks }) {
       <main className='main home-main'>
         <div className='featured-products'>
           <h2>Featured Products</h2>
-          <DrinkListHome drinks={drinks} />
+          <DrinkListHome />
           <Link className='featured-products__button' to='/drinks'>
             <Button content={'See more'} selector={'button--red'} />
           </Link>
